@@ -44,12 +44,9 @@
 
 Active contributor to the [OmniRoute](https://github.com/diegosouzapw/OmniRoute) project (5.7k+ stars). The unified AI proxy/router that makes advanced AI accessible to everyone.
 
-**Contributions ([#2959](https://github.com/diegosouzapw/OmniRoute/pull/2959)):**
-- 🔌 **Notion MCP Context Source** — 6 MCP tools (`notion_search`, `notion_list_databases`, `notion_query_database`, `notion_read`, `notion_append_blocks`, `notion_get_database`)
-- 📊 **Dashboard UI** — New "Context Sources" tab with `NotionSourceCard` for token management
-- 🔒 **Scope Enforcement** — Read/write scope separation (`read:notion` × 5, `write:notion` × 1)
-- 🧪 **20 Unit Tests** — API client, MCP tools, and database persistence
-- 🛡️ Encrypted token storage, rate-limit handling (Retry-After header), sanitized error responses
+**Contributions:**
+- 🔒 **[#2958](https://github.com/diegosouzapw/OmniRoute/pull/2958) — MCP Scope Enforcement Fix** — Fixed critical bug where dynamic tool groups (memory, skills, plugins, compression, gamification) were blocked when scope enforcement was enabled. Reordered guard logic in `evaluateToolScopes()` and added inline scope support to 33 dynamic tool definitions across 5 files. Credited in v3.8.8 CHANGELOG.
+- 🔌 **[#2959](https://github.com/diegosouzapw/OmniRoute/pull/2959) — Notion MCP Context Source** — 6 MCP tools (`notion_search`, `notion_list_databases`, `notion_query_database`, `notion_read`, `notion_append_blocks`, `notion_get_database`), dashboard UI tab, read/write scope separation, 20 unit tests
 
 ---
 
