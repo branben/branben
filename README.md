@@ -19,7 +19,7 @@
 
 ### 🎵 Sound Royale — Music Battle Platform
 
-> Building the future of competitive music. A full-stack platform where artists compete in real-time battles, fans vote with their wallets, and the best tracks rise to the top.
+> Building the future of competitive music. A full-stack platform where artists compete in real-time battles, fans vote and the best tracks rise to the top.
 
 [![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
 [![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev)
