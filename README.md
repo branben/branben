@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Brandon%20Bennett&fontSize=50&fontAlignY=35&desc=Forward%20Deployed%20Engineer%20%7C%20Pursuit%20Fellow&descAlignY=55&animation=fadeIn" />
+  <img src="./assets/banner-header.svg" alt="Brandon Bennett — Forward Deployed Engineer" />
 </p>
 
 <p align="center">
@@ -13,6 +13,12 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
   </a>
   <img src="https://img.shields.io/badge/New%20York-USA-302b63?style=flat-square&logo=google-maps&logoColor=white" />
+</p>
+
+---
+
+<p align="center">
+  <img src="./assets/banner-about.svg" alt="About — Brandon Bennett" />
 </p>
 
 ---
@@ -72,35 +78,18 @@ A standalone Obsidian community plugin for vault-to-vault sync over Tailscale. S
 
 ---
 
-### 🛠️ Tech Stack
-
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailscale-0049FF?style=flat-square&logo=tailscale&logoColor=white" />
-  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" />
-</p>
-
----
-
-### 📊 GitHub Stats
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=branben&show_icons=true&theme=radical&hide_border=true&count_private=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=branben&layout=compact&theme=radical&hide_border=true&langs_count=8" height="170" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=branben&theme=radical&hide_border=true" height="170" />
+  <img src="./assets/banner-skills.svg" alt="Tech Stack" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+  <img src="./assets/banner-gh-stats.svg" alt="GitHub Stats" />
+</p>
+
+---
+
+<p align="center">
+  <img src="./assets/banner-footer.svg" alt="Footer" />
 </p>
