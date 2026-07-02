@@ -106,8 +106,6 @@ A standalone Obsidian community plugin for vault-to-vault sync over Tailscale. S
 
 ---
 
-- 🔬 **Photonics Tracker** — ICT/SMC backtesting engine for equities. 5m intraday strategy targeting 95% win-rate with confluence-based position sizing and killzone-only execution.
-
 ---
 
 <p align="center">
