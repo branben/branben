@@ -57,6 +57,21 @@ Active contributor to the [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 
 ---
 
+### ⚡ [Orca](https://github.com/stablyai/orca) — Open Source Contributor
+
+> Agent terminal renderer. Build CLI engine with xterm.js and PTY orchestration.
+
+[![OmniRoute Stars](https://img.shields.io/github/stars/stablyai/orca?style=social)](https://github.com/stablyai/orca)
+
+Active contributor to the [Orca](https://github.com/stablyai/orca) project (10.3k+ stars). CLI engine powering agents like Codex, Claude Code, and OpenCode in the terminal.
+
+**Contributions:**
+- 🖥️ **[#6758](https://github.com/stablyai/orca/pull/6758) — Fix TUI display artifacts over SSH** — Detects in-place rewrites on background-queued output during idle, then forces a viewport refresh on first foreground chunk. Closes stale renderer-cell bug across agent TUIs.
+- 🩹 **[#6645](https://github.com/stablyai/orca/pull/6645)** — fix-maybe-win - fix escaped windows path being converted to an absolute path by winPath
+- 🐳 **[#6671](https://github.com/stablyai/orca/pull/6671) — Support docker run outside git directory context**
+
+---
+
 ### 💎 [OmniRoute Sync](https://github.com/branben/obsidian-omniroute-sync) — Obsidian Community Plugin
 
 > Sync your vault between desktop and mobile over Tailscale. No cloud services required.
