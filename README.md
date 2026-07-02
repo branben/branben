@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="./assets/banner-header.svg" alt="Brandon Bennett — Forward Deployed Engineer" />
 </p>
@@ -75,6 +76,22 @@ A standalone Obsidian community plugin for vault-to-vault sync over Tailscale. S
 - 🤝 Conflict resolution (keep local/remote/keep-both)
 - 🐛 Per-category debug logging with in-plugin viewer
 - 🛡️ Rate limiting (120 req/min per IP)
+
+---
+
+### 🤖 [MCP Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) — Contributor
+
+> Working on JSON Schema 2020-12 alignment for tool schemas.
+
+**PR [#895](https://github.com/modelcontextprotocol/rust-sdk/pull/895) — SEP-2106: Relax `outputSchema` type gate**
+- Split `validate_and_strip` into input/output variants: `inputSchema` keeps `type: "object"`; `outputSchema` now accepts any JSON Schema root type
+- Updated `with_output_schema` docs
+- 17 new tests for primitives, arrays, compositions, unit type, `Json<T>`, `ToolBase`, cache correctness, and input rejection
+- Status: approved by DaleSeo, queued for **2026-07-28 merge batch**
+
+---
+
+- 🔬 **Photonics Tracker** — ICT/SMC backtesting engine for equities. 5m intraday strategy targeting 95% win-rate with confluence-based position sizing and killzone-only execution.
 
 ---
 
