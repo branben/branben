@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="./assets/banner-header.svg" alt="Brandon Bennett — Forward Deployed Engineer" />
 </p>
@@ -43,6 +42,18 @@
 
 ---
 
+### 🤖 [MCP Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) — Contributor
+
+> Merged: JSON Schema 2020-12 alignment for tool schemas.
+
+**PR [#895](https://github.com/modelcontextprotocol/rust-sdk/pull/895) — SEP-2106: Relax `outputSchema` type gate** ✅ Merged
+- Split `validate_and_strip` into input/output variants: `inputSchema` keeps `type: "object"`; `outputSchema` now accepts any JSON Schema root type
+- Updated `with_output_schema` docs
+- 17 new tests for primitives, arrays, compositions, unit type, `Json<T>`, `ToolBase`, cache correctness, and input rejection
+- Merged in v0.24.0
+
+---
+
 ### ⚡ [OmniRoute](https://github.com/diegosouzapw/OmniRoute) — Open Source Contributor
 
 > One endpoint. 160+ providers. 50+ free. Connect Claude Code, Codex, Cursor, Cline & Copilot to free Claude/GPT/Gemini.
@@ -54,6 +65,11 @@ Active contributor to the [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 **Contributions:**
 - 🔒 **[#2958](https://github.com/diegosouzapw/OmniRoute/pull/2958) — MCP Scope Enforcement Fix** — Fixed critical bug where dynamic tool groups (memory, skills, plugins, compression, gamification) were blocked when scope enforcement was enabled. Reordered guard logic in `evaluateToolScopes()` and added inline scope support to 33 dynamic tool definitions across 5 files. Credited in v3.8.8 CHANGELOG.
 - 🔌 **[#2959](https://github.com/diegosouzapw/OmniRoute/pull/2959) — Notion MCP Context Source** — 6 MCP tools (`notion_search`, `notion_list_databases`, `notion_query_database`, `notion_read`, `notion_append_blocks`, `notion_get_database`), dashboard UI tab, read/write scope separation, 20 unit tests
+- 🔧 **[#10575](https://github.com/diegosouzapw/OmniRoute/pull/10575) — make GitHub skill tools discoverable through omniroute_tool_search** — Fixed critical bug where the 3 GitHub skill tools were registered but invisible to `omniroute_tool_search`. Corrected `TOTAL_MCP_TOOL_COUNT` and added missing tool entries.
+- 🏗️ **[#10039](https://github.com/diegosouzapw/OmniRoute/pull/10039) — combo-lane awareness + activation UX + MCP visibility (Wave 2 of #9654)** — Extends per-connection virtual admission lanes: fan-out awareness, operator activation control, lane state API.
+- 🐛 **[#10322](https://github.com/diegosouzapw/OmniRoute/pull/10322) — fix(chat-body-admission): process-wide budget (#10110)** — Fixes LRU/TTL eviction orphaning live leases from Wave 1's per-connection admission lanes.
+- 📡 **[#9940](https://github.com/diegosouzapw/OmniRoute/pull/9940) — fix: per-connection virtual admission lanes (#9654)** — Wave 1: per-connection virtual admission lanes for agentic workloads, worst-day-ever analysis, failing-test-first.
+- 📝 **[#3077](https://github.com/diegosouzapw/OmniRoute/pull/3077) — feat(observability): add Obsidian context source with 24 MCP tools** — Obsidian via Local REST API plugin, 24 tools scoped `read:obsidian`/`write:obsidian`, follows Notion context source pattern.
 
 ---
 
@@ -69,6 +85,7 @@ Active contributor to the [Orca](https://github.com/stablyai/orca) project (10.3
 - 🖥️ **[#6758](https://github.com/stablyai/orca/pull/6758) — Fix TUI display artifacts over SSH** — Detects in-place rewrites on background-queued output during idle, then forces a viewport refresh on first foreground chunk. Closes stale renderer-cell bug across agent TUIs.
 - 🩹 **[#6645](https://github.com/stablyai/orca/pull/6645)** — fix-maybe-win - fix escaped windows path being converted to an absolute path by winPath
 - 🐳 **[#6671](https://github.com/stablyai/orca/pull/6671) — Support docker run outside git directory context**
+- 🔧 **[#7862](https://github.com/stablyai/orca/pull/7862) — fix(automations): deliver Hermes prompts via native query** — Hermes automations now use `hermes chat --query=<prompt> --tui` native startup contract; prompt transported outside shell history, normalized across wrappers.
 
 ---
 
@@ -91,20 +108,6 @@ A standalone Obsidian community plugin for vault-to-vault sync over Tailscale. S
 - 🤝 Conflict resolution (keep local/remote/keep-both)
 - 🐛 Per-category debug logging with in-plugin viewer
 - 🛡️ Rate limiting (120 req/min per IP)
-
----
-
-### 🤖 [MCP Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) — Contributor
-
-> Working on JSON Schema 2020-12 alignment for tool schemas.
-
-**PR [#895](https://github.com/modelcontextprotocol/rust-sdk/pull/895) — SEP-2106: Relax `outputSchema` type gate**
-- Split `validate_and_strip` into input/output variants: `inputSchema` keeps `type: "object"`; `outputSchema` now accepts any JSON Schema root type
-- Updated `with_output_schema` docs
-- 17 new tests for primitives, arrays, compositions, unit type, `Json<T>`, `ToolBase`, cache correctness, and input rejection
-- Status: approved by DaleSeo, queued for **2026-07-28 merge batch**
-
----
 
 ---
 
