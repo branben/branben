@@ -42,6 +42,72 @@
 
 ---
 
+### 💀 [Worst Day Ever](https://github.com/branben/worst-day-ever-skill) — Adversarial Stress Testing
+
+> Break your app before your users do. A skill that generates worst-case user flows, runs them in a sandbox, and produces a severity-ranked disaster report.
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+
+**5-step pipeline:** MAP → GENERATE → SANDBOX → EXECUTE → REPORT
+
+**8 attack dimensions:** Input Boundary, State Machine Torture, Temporal/Timing, AuthN/Z Shadow, Data Integrity Cascade, Concurrent Load, External Dependency Failure, Brownfield Mining
+
+**6 safeguards:** No real data, no secrets, sandboxed execution, no external calls, bounded duration, no mutation
+
+Supports greenfield (API specs) and brownfield (production logs) modes. Built on semantic anchoring — named categories force structured LLM coverage. Produces a severity-ranked disaster report with resilience score.
+
+*Usage: clone the repo, read `SKILL.md`, paste the assessment prompt into any agent.*
+
+---
+
+### 🔌 [Worst Day Ever MCP](https://github.com/branben/wde-mcp-server) — MCP Server
+
+> Exposes the Worst Day Ever skill as an MCP server via SEP-2640 skills extension.
+
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)
+
+Built on `rmcp` (Rust MCP SDK) with SEP-2640 Skills extension. Exposes the skill as a skill (via `io.modelcontextprotocol/skills`), a tool (`worst_day_ever_assess`), and resources (8 dimension files).
+
+**Two transports:** stdio (`cargo run --bin wde-mcp-stdio`) and HTTP (`cargo run --bin wde-mcp-http`, `127.0.0.1:3001/mcp`)
+
+Includes Python and Rust client examples. Tests: `cargo test` + `cargo clippy --all-targets --all-features -- -D warnings`.
+
+---
+
+### 🏫 [School Core](https://github.com/branben/school-core) — Agent Development Framework
+
+> Route, score, review, and grow AI agents through practice — not prompt-chaining.
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+
+A developmental framework where students grow through practice, feedback, challenge, and rest.
+
+**Key architecture:**
+- **Roles over prompts** — persistent personas (Student / Teacher / Principal / Janitor) with point-gated progression (0-24 → 25-49 → 50-74 → 75+)
+- **Compiler before critic** — execute code first, LLM-as-judge last
+- **Adversarial review** — two-judge (CTO + COO) on every output
+- **Difficulty-adjusted EMA scoring** for growth measurement
+
+**942 tests passing, 15 skipped.** Uses `orca dispatch` and `FirstMate` for crew spawning into Orca worktrees.
+
+---
+
+### 🛠️ [School Core Skills](https://github.com/branben/school-core-skills) — 16 Agent Skills
+
+> A two-loop SDLC in 16 installable agent skills — epic to tickets, ticket to merged PR.
+
+**Install:** `npx skills add branben/school-core-skills`
+
+**Outer loop** (human-driven planning): `grill-me → vision → nose-up → to-prd → to-spec → to-tickets`
+
+**Inner loop** (build): `Prime → Plan → Implement → Validate → Review → PR`
+
+**16 skills total:** `grill-me`, `nose-up`, `spawn-whymage`, `vision`, `to-prd`, `to-spec`, `to-tickets`, `html-diagram`, `html-plan`, `html-wireframe`, `html-prototype`, `html`, `design-artifact`, `plannotator-guide`, `round-based-hook`, `think-tank`, `chunked-writing`, `implement`
+
+Skills assembled from mattpocock/skills, kunchenguid/vision, plannotator/effective-html, and plannotator/guides.
+
+---
+
 ### 🤖 [MCP Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) — Contributor
 
 > Merged: JSON Schema 2020-12 alignment for tool schemas.
@@ -70,6 +136,9 @@ Active contributor to the [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 - 🐛 **[#10322](https://github.com/diegosouzapw/OmniRoute/pull/10322) — fix(chat-body-admission): process-wide budget (#10110)** — Fixes LRU/TTL eviction orphaning live leases from Wave 1's per-connection admission lanes.
 - 📡 **[#9940](https://github.com/diegosouzapw/OmniRoute/pull/9940) — fix: per-connection virtual admission lanes (#9654)** — Wave 1: per-connection virtual admission lanes for agentic workloads, worst-day-ever analysis, failing-test-first.
 - 📝 **[#3077](https://github.com/diegosouzapw/OmniRoute/pull/3077) — feat(observability): add Obsidian context source with 24 MCP tools** — Obsidian via Local REST API plugin, 24 tools scoped `read:obsidian`/`write:obsidian`, follows Notion context source pattern.
+- 🆕 **[#15983](https://github.com/diegosouzapw/OmniRoute/pull/15983) — feat(mcp): add 2026-07-28 spec-compliant v2 server sidecar** (open) — Parallel MCP server surface implementing the 2026-07-28 spec revision: explicit `server/discover` RPC, `resultType` discriminator, cacheable list responses, `_meta` client identity, `outputSchema`.
+- 🐛 **[#15498](https://github.com/diegosouzapw/OmniRoute/pull/15498) — fix(pii): stop redacting code syntax as IPv6** (merged) — Fixed bare `::` regex alternative in `pii_sanitizer.ts` that corrupted Python slices, Haskell/Scala type annotations when PII sanitization was on.
+
 
 ---
 
